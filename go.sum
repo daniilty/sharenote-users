@@ -20,6 +20,12 @@ github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102103604-7e34d44ddcfa h1:
 github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102103604-7e34d44ddcfa/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
 github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102142500-fb36b2b33728 h1:KQPYEteURnTcPYWaOQ18NqhTTw6LHVSxx/WA2/ZQA1Y=
 github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102142500-fb36b2b33728/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105104610-75087018ee22 h1:9y71Hlecx1Y2UgBvknRoYgjaxnBscg0Kqnbcy5d5d4M=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105104610-75087018ee22/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105105924-1ddb51347022 h1:VogLLcPCFW1M/1+GBKMJMTB3Myo3VjlLlRAzbT/oIZk=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105105924-1ddb51347022/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105110524-a8864a5f0b8c h1:FCQEYIBzlh6IFtEZwdU1MLXEh8ShoacBqidFq/7cR9U=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105110524-a8864a5f0b8c/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=

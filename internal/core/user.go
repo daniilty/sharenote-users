@@ -26,6 +26,19 @@ func (s *ServiceImpl) GetUser(ctx context.Context, id string) (*User, bool, erro
 	return convertDBUserToService(user), true, nil
 }
 
+func (s *ServiceImpl) GetUserByEmail(ctx context.Context, email string) (*User, bool, error) {
+	user, ok, err := s.db.GetUserByEmail(ctx, email)
+	if err != nil {
+		return nil, ok, err
+	}
+
+	return convertDBUserToService(user), true, nil
+}
+
+func (s *ServiceImpl) IsValidUserCredentials(ctx context.Context, email string, passwordHash string) (bool, error) {
+	return s.db.IsValidUserCredentials(ctx, email, passwordHash)
+}
+
 func (s *ServiceImpl) GetUsers(ctx context.Context, ids []string) ([]*User, error) {
 	users := make([]*User, 0, len(ids))
 

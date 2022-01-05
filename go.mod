@@ -3,7 +3,7 @@ module github.com/daniilty/sharenote-users
 go 1.17
 
 require (
-	github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102142500-fb36b2b33728
+	github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105110524-a8864a5f0b8c
 	go.mongodb.org/mongo-driver v1.8.1
 	google.golang.org/grpc v1.43.0
 )

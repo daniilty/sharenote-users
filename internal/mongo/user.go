@@ -52,6 +52,44 @@ func (d *DBImpl) GetUser(ctx context.Context, id string) (*User, bool, error) {
 	return user, true, nil
 }
 
+func (d *DBImpl) IsValidUserCredentials(ctx context.Context, email string, passwordHash string) (bool, error) {
+	filter := bson.D{
+		{Key: "email", Value: email},
+		{Key: "password_hash", Value: passwordHash},
+	}
+
+	res := d.usersCollection.FindOne(ctx, filter)
+
+	err := res.Decode(&User{})
+	if err != nil {
+		if errors.Is(err, mongo.ErrNoDocuments) {
+			return false, nil
+		}
+
+		return false, err
+	}
+
+	return true, nil
+}
+
+func (d *DBImpl) GetUserByEmail(ctx context.Context, email string) (*User, bool, error) {
+	filter := bson.D{{Key: "email", Value: email}}
+
+	res := d.usersCollection.FindOne(ctx, filter)
+	user := &User{}
+
+	err := res.Decode(user)
+	if err != nil {
+		if errors.Is(err, mongo.ErrNoDocuments) {
+			return nil, true, err
+		}
+
+		return nil, false, err
+	}
+
+	return user, true, nil
+}
+
 func (d *DBImpl) AddUser(ctx context.Context, user *User) error {
 	_, err := d.usersCollection.InsertOne(ctx, user.toBSOND())
 

@@ -14,6 +14,10 @@ type DB interface {
 	AddUser(context.Context, *User) error
 	// GetNote - get user by id.
 	GetUser(context.Context, string) (*User, bool, error)
+	// GetUserByEmail - get user by email.
+	GetUserByEmail(context.Context, string) (*User, bool, error)
+	// IsValidUserCredentials - find one user with given email and password hash.
+	IsValidUserCredentials(context.Context, string, string) (bool, error)
 	// UpdateUser - update user by id.
 	UpdateUser(context.Context, *User) (bool, error)
 }
