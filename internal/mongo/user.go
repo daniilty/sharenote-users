@@ -90,10 +90,18 @@ func (d *DBImpl) GetUserByEmail(ctx context.Context, email string) (*User, bool,
 	return user, true, nil
 }
 
-func (d *DBImpl) AddUser(ctx context.Context, user *User) error {
-	_, err := d.usersCollection.InsertOne(ctx, user.toBSOND())
+func (d *DBImpl) AddUser(ctx context.Context, user *User) (string, error) {
+	res, err := d.usersCollection.InsertOne(ctx, user.toBSOND())
+	if err != nil {
+		return "", err
+	}
 
-	return err
+	objectID, ok := res.InsertedID.(primitive.ObjectID)
+	if !ok {
+		return "", fmt.Errorf("type cast failed")
+	}
+
+	return objectID.Hex(), nil
 }
 
 func (d *DBImpl) UpdateUser(ctx context.Context, user *User) (bool, error) {

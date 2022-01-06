@@ -13,7 +13,7 @@ type User struct {
 	PasswordHash   string
 }
 
-func (s *ServiceImpl) AddUser(ctx context.Context, user *User) error {
+func (s *ServiceImpl) AddUser(ctx context.Context, user *User) (string, error) {
 	return s.db.AddUser(ctx, user.toDB())
 }
 

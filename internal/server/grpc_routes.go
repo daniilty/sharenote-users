@@ -9,12 +9,14 @@ import (
 )
 
 func (g *GRPC) AddUser(ctx context.Context, req *schema.AddUserRequest) (*schema.AddUserResponse, error) {
-	err := g.service.AddUser(ctx, convertPBAddUserToCore(req))
+	uid, err := g.service.AddUser(ctx, convertPBAddUserToCore(req))
 	if err != nil {
 		return nil, status.Error(codes.Internal, err.Error())
 	}
 
-	return &schema.AddUserResponse{}, nil
+	return &schema.AddUserResponse{
+		Id: uid,
+	}, nil
 }
 
 func (g *GRPC) GetUser(ctx context.Context, req *schema.GetUserRequest) (*schema.GetUserResponse, error) {

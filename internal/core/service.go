@@ -10,7 +10,7 @@ var _ Service = (*ServiceImpl)(nil)
 
 type Service interface {
 	// AddUser - add user to database.
-	AddUser(context.Context, *User) error
+	AddUser(context.Context, *User) (string, error)
 	// GetNote - get user by id.
 	GetUser(context.Context, string) (*User, bool, error)
 	// GetNote - get user by email.

@@ -11,7 +11,7 @@ var _ DB = (*DBImpl)(nil)
 
 type DB interface {
 	// AddNote - add usere to database.
-	AddUser(context.Context, *User) error
+	AddUser(context.Context, *User) (string, error)
 	// GetNote - get user by id.
 	GetUser(context.Context, string) (*User, bool, error)
 	// GetUserByEmail - get user by email.
