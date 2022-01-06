@@ -2,6 +2,7 @@ cloud.google.com/go v0.26.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMT
 cloud.google.com/go v0.34.0/go.mod h1:aQUYkXzVsufM+DwF1aE+0xfcU+56JwCaLick0ClmMTw=
 github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03qcyfWMU=
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
+github.com/benbjohnson/clock v1.1.0 h1:Q92kusRqC1XV2MjkWETPvjJVqKetz1OzxZB7mHJLju8=
 github.com/benbjohnson/clock v1.1.0/go.mod h1:J11/hYXuz8f4ySSvYwY0FKfm+ezbsZBKZxNJlLklBHA=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
@@ -12,20 +13,8 @@ github.com/cncf/udpa/go v0.0.0-20210930031921-04548b0d99d4/go.mod h1:6pvJx4me5XP
 github.com/cncf/xds/go v0.0.0-20210805033703-aa0b78936158/go.mod h1:eXthEFrGJvWHgFFCl3hGmgk+/aYT6PnTQLykKQRLhEs=
 github.com/cncf/xds/go v0.0.0-20210922020428-25de7278fc84/go.mod h1:eXthEFrGJvWHgFFCl3hGmgk+/aYT6PnTQLykKQRLhEs=
 github.com/cncf/xds/go v0.0.0-20211011173535-cb28da3451f1/go.mod h1:eXthEFrGJvWHgFFCl3hGmgk+/aYT6PnTQLykKQRLhEs=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220101134737-59286ba1d9ad h1:o0nAukzvuuvn6/IdpyqzMAYVT0NfT7S/W7vhqLsNmhg=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220101134737-59286ba1d9ad/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102102512-733348860b3a h1:RU4xx+nS+6RHF/q2/Eyi7JZb0QbK8M+Fc/KRB9RlRng=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102102512-733348860b3a/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102103604-7e34d44ddcfa h1:BvHhw7I7xDeOZDGa3589nq1yveJNbsgdDEYnq3AWTeY=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102103604-7e34d44ddcfa/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102142500-fb36b2b33728 h1:KQPYEteURnTcPYWaOQ18NqhTTw6LHVSxx/WA2/ZQA1Y=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220102142500-fb36b2b33728/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105104610-75087018ee22 h1:9y71Hlecx1Y2UgBvknRoYgjaxnBscg0Kqnbcy5d5d4M=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105104610-75087018ee22/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105105924-1ddb51347022 h1:VogLLcPCFW1M/1+GBKMJMTB3Myo3VjlLlRAzbT/oIZk=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105105924-1ddb51347022/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105110524-a8864a5f0b8c h1:FCQEYIBzlh6IFtEZwdU1MLXEh8ShoacBqidFq/7cR9U=
-github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105110524-a8864a5f0b8c/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105144928-4cb1e8bdf1a3 h1:K3FVQzHpDbECzgNI3FKeou0qOpja/Cm/k12rMstK7ms=
+github.com/daniilty/sharenote-grpc-schema v0.0.0-20220105144928-4cb1e8bdf1a3/go.mod h1:qCOj9mHRcN/GQfR3BDtUYL3LEcOgX3IFsWhBitUJzUo=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -100,6 +89,7 @@ go.mongodb.org/mongo-driver v1.8.1/go.mod h1:0sQWfOeY63QTntERDJJ/0SuKK0T1uVSgKCu
 go.opentelemetry.io/proto/otlp v0.7.0/go.mod h1:PqfVotwruBrMGOCsRd/89rSnXhoiJIqeYNgFYFoEGnI=
 go.uber.org/atomic v1.7.0 h1:ADUqmZGgLDDfbSL9ZmPxKTybcoEYHgpYfELNoN+7hsw=
 go.uber.org/atomic v1.7.0/go.mod h1:fEN4uk6kAWBTFdckzkM89CLk9XfWZrxpCo0nPH17wJc=
+go.uber.org/goleak v1.1.11-0.20210813005559-691160354723 h1:sHOAIxRGBp443oHZIPB+HsUGaksVCXVQENPxwTfQdH4=
 go.uber.org/goleak v1.1.11-0.20210813005559-691160354723/go.mod h1:cwTWslyiVhfpKIDGSZEM2HlOvcqm+tG4zioyIeLoqMQ=
 go.uber.org/multierr v1.6.0 h1:y6IPFStTAIT5Ytl7/XYmHvzXQ7S3g/IeZW9hyZ5thw4=
 go.uber.org/multierr v1.6.0/go.mod h1:cdWPpRnG4AhwMwsgIHip0KRBQjJy5kYEpYjJxpXp9iU=
@@ -194,6 +184,7 @@ gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8
 gopkg.in/check.v1 v1.0.0-20180628173108-788fd7840127/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v2 v2.2.2/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v2 v2.2.3/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
+gopkg.in/yaml.v2 v2.2.8 h1:obN1ZagJSUGI0Ek/LBmuj4SNLPfIny3KsKFopxRdj10=
 gopkg.in/yaml.v2 v2.2.8/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=
 gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
 gopkg.in/yaml.v3 v3.0.0-20210107192922-496545a6307b h1:h8qDotaEPuJATrMmW04NCwg7v22aHH28wwpauUhK9Oo=
