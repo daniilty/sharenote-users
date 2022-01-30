@@ -33,6 +33,14 @@ func convertCoreUserToPB(user *core.User) *schema.User {
 	}
 }
 
+func convertCoreUserToResponse(u *core.User) user {
+	return user{
+		ID:       u.ID,
+		Name:     u.Name,
+		UserName: u.UserName,
+	}
+}
+
 func convertPBUserToCore(user *schema.User) *core.User {
 	return &core.User{
 		ID:             user.Id,
@@ -43,11 +51,21 @@ func convertPBUserToCore(user *schema.User) *core.User {
 	}
 }
 
-func convertCoreUsersToPB(notes []*core.User) []*schema.User {
-	converted := make([]*schema.User, 0, len(notes))
+func convertCoreUsersToPB(users []*core.User) []*schema.User {
+	converted := make([]*schema.User, 0, len(users))
 
-	for i := range notes {
-		converted = append(converted, convertCoreUserToPB(notes[i]))
+	for i := range users {
+		converted = append(converted, convertCoreUserToPB(users[i]))
+	}
+
+	return converted
+}
+
+func convertCoreUsersToResponse(users []*core.User) []user {
+	converted := make([]user, 0, len(users))
+
+	for i := range users {
+		converted = append(converted, convertCoreUserToResponse(users[i]))
 	}
 
 	return converted
